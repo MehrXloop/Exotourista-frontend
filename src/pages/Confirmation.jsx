@@ -26,7 +26,7 @@ function Confirmation() {
   return (
     <div>
         {summary.map((traveler)=>{
-           return<div className={styles.container}>
+           return<div className={styles.container} key={traveler.id}>
             <h1><span>{traveler.name}</span>, Thanks for choosing us!!</h1>
             <h2>Your Stay Summary</h2>
             <p><b>Hotel Name: </b>{traveler.hotelName}</p>
