@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
+    <div data-testid="app">
       <Router>
         <Navbar/>
         <Routes>
@@ -16,7 +16,7 @@ function App() {
           <Route index path="/confirm" element={<Confirmation />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

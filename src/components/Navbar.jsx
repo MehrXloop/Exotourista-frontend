@@ -5,7 +5,7 @@ import styles from '../pages/HotelList.module.css'
 function Navbar() {
   return (
     <div className={styles.logo}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
       </div>
   )
 }

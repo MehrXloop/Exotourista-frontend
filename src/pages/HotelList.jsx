@@ -34,7 +34,7 @@ function HotelList() {
 
   return (
     <>
-      <form onSubmit={handleSearch} className={styles.form}>
+      <form onSubmit={handleSearch} className={styles.form} data-testid="form">
         <h2>Search Criteria</h2>
         <div>
           <label htmlFor="location">Please select your location: </label>
@@ -64,9 +64,9 @@ function HotelList() {
           <input type="radio" name="pool" id="pool" value="true" onChange={(e) => setPool(e.target.value)} />Yes
           <input type="radio" name="pool" id="pool" value="false" onChange={(e) => setPool(e.target.value)} />No
         </div>
-        <button type="submit">Search</button>
+        <button type="submit"  data-testid="searchBtn">Search</button>
       </form>
-      <ol>
+      <ol data-testid="hotel">
         {showHotels && (
           filteredHotels.length === 0 ? (
             <p>No hotels found. Please refine your search criteria.</p>
